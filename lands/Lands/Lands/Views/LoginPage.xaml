@@ -68,10 +68,18 @@
                    VerticalOptions="Center"
                    HorizontalOptions="StartAndExpand">
             </Label>
-            <Switch HorizontalOptions="End">
+            <Switch HorizontalOptions="End"
+                    IsToggled="True">
                 
             </Switch>
             </StackLayout>
+
+                <Label HorizontalOptions="Center"
+                       Text="Forgot your password?"
+                       TextColor="Blue"
+                       VerticalOptions="CenterAndExpand">
+                    
+                </Label>
             
             <ActivityIndicator>
                 
