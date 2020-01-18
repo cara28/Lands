@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+    
+    
+    
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Login"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"   
+             x:Class="Lands.Views.LoginPage">
+    <ContentPage.Content>
+        <ScrollView>
+        
+        <StackLayout Padding="20">
+            <!--El padding lo que hace es que corre 20px arriba, abajo, derecha,izquierda-->
+
+            <Label Text="Lands" FontSize="30"
+                   FontAttributes="Bold" TextColor="Navy" 
+                   HorizontalOptions="Center">  
+            </Label>
+           
+            
+            <Image Source="earth"></Image>
+
+    <Grid Margin="0,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+           
+
+            <Label Text="E-Mail" 
+                   Grid.Row="0" 
+                   Grid.Column="0" 
+                   Padding="0,15"
+                   FontAttributes="Bold" 
+                   FontSize="13">
+            </Label>
+
+                <Entry Placeholder="Enter your email" 
+                       Grid.Row="0" 
+                       Grid.Column="1"
+                       Keyboard="Email">
+                </Entry>
+                
+            <Label Text="Password" 
+                   Padding="0,15"
+                   FontAttributes="Bold" 
+                   FontSize="13"
+                   Grid.Row="1" 
+                   Grid.Column="0" >
+            </Label>
+
+
+                <Entry Placeholder="Enter your Password" 
+                   IsPassword="True"
+                   Grid.Row="1" 
+                   Grid.Column="1" >              
+            </Entry>
+
+    </Grid>
+            <StackLayout
+                Orientation="Horizontal">
+            <Label Text="Remember me:"
+                   VerticalOptions="Center"
+                   HorizontalOptions="StartAndExpand">
+            </Label>
+            <Switch HorizontalOptions="End">
+                
+            </Switch>
+            </StackLayout>
+            
+            <ActivityIndicator>
+                
+            </ActivityIndicator>
+
+
+        
+        
+        <StackLayout Margin="40,0">
+        <Button Text="Login" 
+                    BackgroundColor="Navy" 
+                    HeightRequest="46"
+                    TextColor="White" 
+                    BorderRadius="23">
+        </Button>
+
+
+        <Button Text="Register" 
+                    BackgroundColor="Green" 
+                    HeightRequest="46"
+                    TextColor="White" 
+                    BorderRadius="23">
+        </Button>
+            
+        </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="facebook"
+                       WidthRequest="120"></Image>
+                <Image Source="twitter"
+                       WidthRequest="100"></Image>
+                <Image Source="instagram"
+                       WidthRequest="100"></Image>
+            </StackLayout>
+
+        </StackLayout>
+        </ScrollView>
+
+
+    </ContentPage.Content>
+</ContentPage>
