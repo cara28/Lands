@@ -106,7 +106,9 @@
                     HeightRequest="46"
                     TextColor="White" 
                     BorderRadius="23"
-                 HorizontalOptions="EndAndExpand">
+                 HorizontalOptions="EndAndExpand"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                    >
         </Button>
 
 
@@ -115,7 +117,8 @@
                     HeightRequest="46"
                     TextColor="White" 
                     BorderRadius="23"
-                 HorizontalOptions="StartAndExpand">
+                 HorizontalOptions="StartAndExpand"
+                 IsEnabled="{Binding IsEnabled, Mode=TwoWay}">
         </Button>
             
         </StackLayout>
