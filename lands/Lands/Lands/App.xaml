@@ -12,6 +12,7 @@
 
         <ResourceDictionary>
             <infra:InstanceLocator x:Key="Locator"/>
+           
         </ResourceDictionary>
 
 
